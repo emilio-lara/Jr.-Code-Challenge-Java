@@ -1,0 +1,21 @@
+package main;
+
+import java.io.IOException;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String file = "ms3Interview.csv";
+		try {
+			ReadingRecods records = new ReadingRecods();
+			records.readFile(file);
+			int good= records.valid.size();
+			int bad = records.failed.size();
+			int recieved = records.recieved;
+			System.out.println(recieved+" "+good+" "+bad);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

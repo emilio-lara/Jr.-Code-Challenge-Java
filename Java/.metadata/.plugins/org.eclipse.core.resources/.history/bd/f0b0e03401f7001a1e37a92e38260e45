@@ -1,0 +1,43 @@
+package main;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ReadingRecods {
+	List<String> valid = new ArrayList();
+	List<String> failed = new ArrayList();
+	static int recieved = 0;
+
+	public ReadingRecods() {
+		
+	}
+
+	public void readFile(String file) throws IOException {
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		String str = "";
+		boolean goodRecord = true;
+		while ((str = br.readLine()) != null) {
+			recieved++;
+			String[] array = str.split(",");
+			
+			for (int i = 0; i < array.length; i++) {
+				if (array[i].equals("")) {
+					goodRecord = false;
+				}
+			}
+			
+			if (goodRecord) {
+				valid.add(str);
+			} else
+				failed.add(str);
+
+			goodRecord = true;
+		}
+		br.close();
+
+	}
+
+}

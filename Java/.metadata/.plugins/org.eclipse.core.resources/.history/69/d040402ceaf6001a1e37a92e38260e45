@@ -1,0 +1,36 @@
+package main;
+
+import java.sql.*;
+
+
+public class DB {
+	Connection conn= null;
+	
+	public static void main(String[] args) {
+		dbConnection("C:\\Users\\16825\\Desktop\\DBSqlite\\test.db");
+	}
+	
+	public static Connection dbConnection(String dbPath) {
+		
+		try(Connection conn= DriverManager.getConnection("jdbc:sqlite:"+dbPath);
+				Statement statement = conn.createStatement()) {
+			
+			statement.execute("DROP TABLE IF EXISTS contacts");
+			System.out.println("Dopping table contacts");
+			statement.execute("CREATE TABLE contacts (name TEXT,phone INTEGER, email TEXT)");
+			System.out.println("Table contacts created");
+			
+			statement.close();
+			conn.close();
+		}catch(Exception e)
+		{
+			System.out.println("Something went wrong"+" "+e);
+		}
+		
+		return null;
+		
+	}
+	
+	
+
+}

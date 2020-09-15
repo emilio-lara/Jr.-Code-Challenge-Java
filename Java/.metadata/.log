@@ -1,0 +1,402 @@
+!SESSION 2020-09-14 11:00:20.444 -----------------------------------------------
+eclipse.buildId=4.5.1.202001211336-RELEASE
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-09-14 11:00:40.786
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-09-14 11:00:40.786
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1aca6dc3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3731e8b6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-14 11:00:47.934
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\16825'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2020-09-14 11:09:44.532
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:09.982
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:09.988
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6db64abf[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:10.016
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:10.595
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:12.400
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:12.405
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6db64abf[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:12.411
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:23.989
+!MESSAGE Boot LS startup time from start to initialized: 11572ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.232
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pRkJGbJKisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.240
+!MESSAGE subscribing to classpath changes: sts4.classpath.pRkJGbJK isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.248
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.256
+!MESSAGE subsribers = {sts4.classpath.pRkJGbJK=Send Classpath Notifications(183)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.262
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.267
+!MESSAGE project JavaSqliteInsertTable ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.273
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.278
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.284
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.pRkJGbJK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.289
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.298
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.305
+!MESSAGE buffering callback sts4.classpath.pRkJGbJK JavaSqliteInsertTable false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.311
+!MESSAGE executing callback sts4.classpath.pRkJGbJK 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 11:17:24.365
+!MESSAGE executing callback sts4.classpath.pRkJGbJK SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.ui 2 0 2020-09-14 11:22:32.597
+!MESSAGE The 'org.eclipse.jdt.ui.JavaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.jdt.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:35.472
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pRkJGbJK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:35.551
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.pRkJGbJK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:35.558
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:35.566
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pRkJGbJK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:50.965
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:51.036
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6db64abf[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:51.072
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.149
+!MESSAGE Boot LS startup time from start to initialized: 5000ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.307
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.strJMksKisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.315
+!MESSAGE subscribing to classpath changes: sts4.classpath.strJMksK isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.323
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.331
+!MESSAGE subsribers = {sts4.classpath.strJMksK=Send Classpath Notifications(786)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.337
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.342
+!MESSAGE project JavaSqliteInsertTable ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.349
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.354
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.360
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.365
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.strJMksK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.370
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.427
+!MESSAGE buffering callback sts4.classpath.strJMksK JavaSqliteInsertTable false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.434
+!MESSAGE executing callback sts4.classpath.strJMksK 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:17:56.477
+!MESSAGE executing callback sts4.classpath.strJMksK SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:19:53.239
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.strJMksK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:19:53.252
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.strJMksK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:19:53.261
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:19:53.267
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.strJMksK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:21.034
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:21.042
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6db64abf[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:21.048
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.349
+!MESSAGE Boot LS startup time from start to initialized: 2293ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.377
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SKmZePbTisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.403
+!MESSAGE subscribing to classpath changes: sts4.classpath.SKmZePbT isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.409
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.417
+!MESSAGE subsribers = {sts4.classpath.SKmZePbT=Send Classpath Notifications(872)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.423
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.428
+!MESSAGE project JavaSqliteInsertTable ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.434
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.440
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.446
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SKmZePbT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.451
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.458
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.464
+!MESSAGE buffering callback sts4.classpath.SKmZePbT JavaSqliteInsertTable false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.470
+!MESSAGE executing callback sts4.classpath.SKmZePbT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 12:20:23.488
+!MESSAGE executing callback sts4.classpath.SKmZePbT SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:10.976
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:11.158
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:11.248
+!MESSAGE classpath=37 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:11.256
+!MESSAGE buffering callback sts4.classpath.SKmZePbT JavaSqliteInsertTable false 37
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:11.265
+!MESSAGE executing callback sts4.classpath.SKmZePbT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:13.275
+!MESSAGE executing callback sts4.classpath.SKmZePbT FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-09-14 14:38:13.282
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:14.465
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:14.481
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:14.496
+!MESSAGE classpath=37 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:14.523
+!MESSAGE buffering callback sts4.classpath.SKmZePbT JavaSqliteInsertTable false 37
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:14.538
+!MESSAGE executing callback sts4.classpath.SKmZePbT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:15.817
+!MESSAGE executing callback sts4.classpath.SKmZePbT SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.711
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.722
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.729
+!MESSAGE classpath=37 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.737
+!MESSAGE buffering callback sts4.classpath.SKmZePbT JavaSqliteInsertTable false 37
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.744
+!MESSAGE executing callback sts4.classpath.SKmZePbT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 14:38:33.752
+!MESSAGE executing callback sts4.classpath.SKmZePbT SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-14 14:53:48.647
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-14 18:39:33.495
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:33.798
+!MESSAGE Preparing classpath changed notification JavaSqliteInsertTable
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:34.168
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:34.175
+!MESSAGE classpath=37 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:35.253
+!MESSAGE buffering callback sts4.classpath.SKmZePbT JavaSqliteInsertTable false 37
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:35.378
+!MESSAGE executing callback sts4.classpath.SKmZePbT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 19:08:36.682
+!MESSAGE executing callback sts4.classpath.SKmZePbT SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-14 19:39:37.652
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-14 19:52:57.793
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-15 08:35:20.865
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:33:58.787
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-15 13:40:07.768
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SKmZePbT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-15 13:40:08.304
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.SKmZePbT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-15 13:40:08.314
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-15 13:40:08.355
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.SKmZePbT => OK

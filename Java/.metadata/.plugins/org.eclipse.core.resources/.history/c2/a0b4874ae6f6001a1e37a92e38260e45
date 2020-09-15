@@ -1,0 +1,33 @@
+package main;
+
+import java.sql.*;
+
+
+public class DB {
+	Connection conn= null;
+	
+	public static void main(String[] args) {
+		dbConnection();
+	}
+	
+	public static Connection dbConnection() {
+		
+		try {
+			
+			Class.forName("org.sqlite.JDBC");
+			Connection conn= DriverManager.getConnection("jdbc:sqlite:C:\\Users\\16825\\Desktop\\DBSqlite\\test.db");
+			System.out.println("Connected");
+			
+			
+		}catch(Exception e)
+		{
+			System.out.println("Something went wrong"+" "+e);
+		}
+		
+		return null;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,90 @@
+package main;
+
+import java.sql.*;
+import java.util.List;
+
+public class DB {
+	Connection conn = null;
+	Statement statement = null;
+
+	public Statement dbConnection(String dbPath) throws SQLException {
+
+		conn = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
+		statement = conn.createStatement();
+		System.out.println("connected");
+
+		return statement;
+
+	}
+
+	public void createTable(String table) throws SQLException {
+		String querie = "CREATE TABLE IF NOT EXISTS " + table + "(A TEXT," + " B TEXT," + " C TEXT,"
+				+ " D  TEXT," + " E TEXT," + " F TEXT," + " G TEXT," + " H TEXT,"
+				+ " I TEXT," + " J TEXT)";
+
+		execute(querie);
+		System.out.println("table created");
+	}
+
+	public void insert(String table, List records) throws SQLException {
+		PreparedStatement pstatement = conn.prepareStatement("INSERT INTO X(A,B,C,D,E,F,G,H,I,J) "
+                + "VALUES(?,?,?,?,?,?,?,?,?,?)");
+		String line = (String) records.get(1);
+		System.out.println(line);
+		String[] rec = line.split(",");
+		
+		 pstatement.setString(1, rec[0]);
+         pstatement.setString(2, rec[1]);
+         pstatement.setString(3, rec[2]);
+         pstatement.setString(4, rec[3]);
+         pstatement.setString(5, rec[4]);
+         pstatement.setString(6, rec[5]);
+         pstatement.setString(7, rec[6]);
+         pstatement.setString(8, rec[7]);
+         pstatement.setString(9, rec[8]);
+         pstatement.setString(10, rec[9]);
+         pstatement.executeUpdate();
+		
+		
+		/*for (int i = 1; i < 2; i++) {
+			String line = (String) records.get(i);
+			System.out.println(line);
+			String[] rec = line.split(",");
+			System.out.println(rec.length);
+			String querie = "INSERT INTO "+table+"(A,B,C,D,E,F,G,H,I,J) " + 
+			"VALUES("
+			+rec[0]+","
+			+rec[1]+","
+			+rec[2]+","
+			+rec[3]+","
+			+rec[5]+","
+			+rec[6]+","
+			+rec[7]+","
+			+rec[8]+","
+			+rec[9]+","
+			+rec[10]+")";
+			
+			statement.execute(querie);
+			
+		}*/
+
+	}
+
+	public void dropTable(String table) throws SQLException {
+		String querie = "DROP TABLE IF EXISTS " + table;
+		execute(querie);
+		System.out.println("table droped");
+
+	}
+
+	public void execute(String querie) throws SQLException {
+		statement.execute(querie);
+
+	}
+
+	public void closeConnection() throws SQLException {
+		conn.close();
+		statement.close();
+	}
+
+}

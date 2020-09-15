@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SqliteInsertTable&apos;" deleteContents="true" description="Delete resource &apos;SqliteInsertTable&apos;" element1="/SqliteInsertTable" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1600099844899"/>
+</session>

@@ -1,0 +1,31 @@
+package main;
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		System.out.println("Testing main");
+		String file ="C:/Users/16825/Desktop/MS3/Java/JavaSqliteInsertTable/src/main/resources/ms3Interview.csv";
+		try {
+		readFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void readFile(String file) throws IOException {
+		File fr = new File(file);
+		Scanner scan = new Scanner(file);
+		
+		String str="";
+		while((str = scan.next())!= null){
+			System.out.println(str);
+		}
+		
+		
+		
+	}
+
+}
+

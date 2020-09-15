@@ -1,0 +1,31 @@
+package main;
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		System.out.println("Testing main");
+		String file ="";
+		try {
+			print("Test.txt");
+		
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void ReadFile(String file) throws IOException {
+		FileWriter fw = new FileWriter (file);
+		PrintWriter pw = new PrintWriter(fw);
+		
+		pw.println("Holw");
+		pw.println("Holw");
+		pw.println("Holw");
+		pw.close();
+		
+		
+	}
+
+}
+

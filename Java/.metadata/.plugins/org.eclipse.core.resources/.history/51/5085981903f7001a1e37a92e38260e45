@@ -1,0 +1,34 @@
+package main;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String file = "ms3Interview.csv";
+		String path="C:\\Users\\16825\\Desktop\\DBSqlite\\test.db";
+		String table = "records";
+		DB db= new DB();
+		ReadingRecods records = new ReadingRecods();
+		try {
+			db.dbConnection(path);
+			db.dropTable( table);
+			db.createTable(table);
+			db.closeConnection();
+			records.readFile(file);
+			int good= records.valid.size();
+			int bad = records.failed.size();
+			int recieved = records.recieved;
+			
+			
+			System.out.println(recieved+" "+good+" "+bad);
+		}catch (SQLException e) {
+			e.printStackTrace();
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

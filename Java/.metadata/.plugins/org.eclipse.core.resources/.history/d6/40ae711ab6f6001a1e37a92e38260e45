@@ -1,0 +1,31 @@
+package main;
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		System.out.println("Testing main");
+		String file ="ms3Interview.csv";
+		try {
+			readFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void readFile(String file) throws IOException {
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		
+		String str ="";
+		while(( str = br.readLine()) != null) {
+			
+			System.out.println(str);
+		}
+		
+		
+	}
+
+}
+

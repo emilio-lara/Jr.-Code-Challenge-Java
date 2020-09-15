@@ -1,0 +1,53 @@
+package main;
+
+import java.sql.*;
+
+public class DB {
+	Connection conn = null;
+	Statement statement = null;
+
+	public static void main(String[] args) {
+		String path="C:\\Users\\16825\\Desktop\\DBSqlite\\test.db";
+		String table = "contacts";
+		DB db= new DB();
+		try {
+			db.dbConnection(path);
+			db.dropTable( table);
+			db.createTable(table);
+			db.closeConnection();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public  Statement dbConnection(String dbPath) throws SQLException {
+
+		conn = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
+		statement = conn.createStatement();
+		System.out.println("connected");
+		
+		return statement;
+
+	}
+	public void createTable(String table) throws SQLException {
+		String querie = "CREATE TABLE contacts (name TEXT,phone INTEGER, email TEXT)";
+		execute(querie);
+		System.out.println("table created");
+	}
+	public void dropTable(String table) throws SQLException {
+		String querie="DROP TABLE IF EXISTS "+table;
+		execute(querie);
+		System.out.println("table droped");
+		
+	}
+	public void execute(String querie) throws SQLException {
+		statement.execute(querie);
+		
+	}
+	public void closeConnection() throws SQLException {
+		conn.close();
+		statement.close();
+	}
+
+}

@@ -1,0 +1,46 @@
+
+import java.io.*;
+
+public class Main {
+
+		
+		public static void main(String[] args) {
+			System.out.println("Testing main");
+			String file ="ms3Interview.csv";
+			try {
+				readFile(file);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		public static void readFile(String file) throws IOException {
+			
+			
+			
+			BufferedReader br = null;
+			String line="";
+			
+			try {
+				br = new BufferedReader(new FileReader(file));
+				
+				while((line = br.readLine()) != null) {
+					String [] array= line.split(",");
+					
+					for(int i=0;i<array.length;i++) {
+						System.out.print(array[i]+" ");
+					}
+					System.out.println();
+				}
+				
+				
+			}catch(FileNotFoundException e) {
+				System.out.println(e);
+			}
+			
+		}
+
+
+
+}
