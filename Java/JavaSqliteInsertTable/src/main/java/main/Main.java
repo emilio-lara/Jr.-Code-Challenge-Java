@@ -8,7 +8,7 @@ public class Main {
 	// The main method is use as start to call the additional classes to implement DB operations and read and create files
 	public static void main(String[] args) {
 		String file = "ms3Interview.csv"; // File to read
-		String dbPath="C:\\Users\\16825\\Desktop\\MS3\\Java\\JavaSqliteInsertTable\\test.db"; // DB path location
+		String dbPath="C:\\Users\\16825\\Desktop\\MS3\\Jr.-Code-Challenge-Java\\Java\\JavaSqliteInsertTable\\test.db"; // DB path location
 		String table = "records"; // name of the table to be create
 		
 		DB db= new DB();// Initialize class DB
