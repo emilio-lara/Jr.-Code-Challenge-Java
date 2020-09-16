@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class ReadingRecods {
 	
-	List<String> valid; // store good records
+	List<Schema> valid; // store good records
 	List<String> failed; // store bad records
 	static int recieved; // count all records
 
 	public ReadingRecods() {
-		valid = new ArrayList();
+		valid = new ArrayList<Schema>();
 		failed = new ArrayList();
 		recieved = 0;
 		
@@ -42,7 +42,20 @@ public class ReadingRecods {
 			
 			if (goodRecord) {
 				if(array.length==11) { // make sure is the right number of items required
-					valid.add(str);    // adding good record into arraylist
+					    valid.add(new Schema(
+					    			array[0],
+					    			array[1],
+					    			array[2],
+					    			array[3],
+					    			array[4]+array[5],
+					    			array[6],
+					    			array[7],
+					    			array[8],
+					    			array[9],
+					    			array[10]
+					    		
+					    		
+					    		));
 				}
 			} else {
 				failed.add(str);		// adding failed record into arraylist

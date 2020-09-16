@@ -15,6 +15,7 @@ public class Main {
 		ReadingRecods records = new ReadingRecods(); // Initialized class ReadingRecords
 		try {
 			records.readFile(file);
+			//System.out.println(records.valid.get(0).getA());
 			db.dbConnection(dbPath);
 			db.dropTable( table);
 			db.createTable(table);

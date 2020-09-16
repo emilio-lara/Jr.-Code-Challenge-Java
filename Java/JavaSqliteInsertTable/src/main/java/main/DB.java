@@ -37,30 +37,28 @@ public class DB {
 		System.out.println("table created");
 	}
 	// This method will insert records from a arraylist
-	public void insert(String table, List records) throws SQLException {
+	public void insert(String table, List rec) throws SQLException {
 		long startTime = System.currentTimeMillis();
 		long endTime = 0;
+	
 		
 		PreparedStatement pstatement = conn
 				.prepareStatement("INSERT INTO " + table + "(A,B,C,D,E,F,G,H,I,J) " + "VALUES(?,?,?,?,?,?,?,?,?,?)");
-		for (int i = 1; i <records.size(); i++) {
+		for (int i = 1; i <rec.size(); i++) {
 			System.out.println("insert record# " + i);
-			String line = (String) records.get(i);
-			String[] rec = line.split(",");
-			if(rec.length!=11)
-				continue;
-
-			pstatement.setString(1, rec[0]);
-			pstatement.setString(2, rec[1]);
-			pstatement.setString(3, rec[2]);
-			pstatement.setString(4, rec[3]);
-			pstatement.setString(5, rec[4] + rec[5]);
-			pstatement.setString(6, rec[6]);
-			pstatement.setString(7, rec[7]);
-			pstatement.setString(8, rec[8]);
-			pstatement.setString(9, rec[9]);
-			pstatement.setString(10, rec[10]);
-			pstatement.executeUpdate();
+		
+			pstatement.setString(1, ((Schema) rec.get(i)).getA());
+			pstatement.setString(2, ((Schema) rec.get(i)).getB());
+			pstatement.setString(3, ((Schema) rec.get(i)).getC());
+			pstatement.setString(4, ((Schema) rec.get(i)).getD());
+			pstatement.setString(5, ((Schema) rec.get(i)).getE());
+			pstatement.setString(6, ((Schema) rec.get(i)).getF());
+			pstatement.setString(7, ((Schema) rec.get(i)).getG());
+			pstatement.setString(8, ((Schema) rec.get(i)).getH());
+			pstatement.setString(9, ((Schema) rec.get(i)).getI());
+			pstatement.setString(10, ((Schema) rec.get(i)).getJ());
+		
+			pstatement.executeUpdate(); 
 		}
 		pstatement.close();
 		
